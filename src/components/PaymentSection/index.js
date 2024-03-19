@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const PayementSectionStyle = styled.div`
-  padding: 100px;
+  padding: 32px;
+  @media screen and (min-width: 768px) {
+    padding: 100px;
+  }
   .payment-section {
     max-width: 1440px;
     margin: auto;
@@ -10,7 +13,10 @@ const PayementSectionStyle = styled.div`
     text-align: center;
 
     img {
-      max-width: 25%;
+      min-width: 220px;
+      @media screen and (min-width: 1260px) {
+        min-width: 25%;
+      }
     }
     span {
       text-transform: uppercase;
@@ -21,19 +27,26 @@ const PayementSectionStyle = styled.div`
     }
 
     h2 {
-      font-size: 48px;
+      font-size: 38px;
       text-transform: capitalize;
       letter-spacing: 1.5px;
+      @media screen and (min-width: 768px) {
+        font-size: 48px;
+      }
     }
   }
   .screenshots {
-    margin-top: 100px;
+    margin-top: 20px;
+    @media screen and (min-width: 768px) {
+      margin-top: 100px;
+    }
   }
 
   .screenshot {
     display: flex;
     gap: 20px;
     overflow: scroll hidden;
+    scrollbar-width: none;
   }
 `;
 

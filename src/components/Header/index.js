@@ -5,18 +5,27 @@ const HeaderStyle = styled.div`
   .header-wrapper {
     max-width: 1440px;
     margin: auto;
-    padding: 16px;
+    padding: 16px 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      padding: 16px;
+    }
     .menu {
       a {
-        padding: 15px 25px;
+        padding: 10px;
         color: #ffffff;
-        letter-spacing: 4.5px;
+        font-size: 12px;
         background: #1cc343;
-        margin-right: 20px;
+        margin-right: 10px;
         text-decoration: none;
+        @media screen and (min-width: 768px) {
+          margin-right: 20px;
+          padding: 15px 25px;
+          letter-spacing: 4.5px;
+          font-size: 16px;
+        }
       }
     }
     .logo {

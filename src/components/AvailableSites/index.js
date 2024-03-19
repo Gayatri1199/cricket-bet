@@ -27,6 +27,9 @@ const AvailableSitesStyle = styled.div`
     .sites {
       text-align: center;
       margin-top: 80px;
+      white-space: nowrap;
+      overflow: scroll hidden;
+      scrollbar-width: none;
       .site {
         min-width: 100px;
         height: 64px;

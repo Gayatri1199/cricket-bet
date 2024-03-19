@@ -8,8 +8,11 @@ const WaysToBetIDStyle = styled.div`
     rgba(0, 0, 0, 0.5) 36%,
     rgb(73 14 42) 100%
   );
-  padding: 100px;
+  padding: 32px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    padding: 100px;
+  }
   .ways {
     display: flex;
     gap: 20px;
@@ -29,16 +32,25 @@ const WaysToBetIDStyle = styled.div`
     font-size: 48px;
     text-transform: capitalize;
     letter-spacing: 1.5px;
+    @media screen and (min-width: 1260px) {
+      font-size: 38px;
+    }
   }
   .ways {
     margin-top: 50px;
   }
   .way {
     background: #120d1c;
-    padding: 3.2em 2em 1.2em;
-    max-width: 252px;
+    padding: 3.2em 0em 1.2em;
+    max-width: 160px;
     width: 100%;
     cursor: pointer;
+    @media screen and (min-width: 768px) {
+      max-width: 252px;
+    }
+    @media screen and (min-width: 1261px) {
+      padding: 3.2em 2em 1.2em;
+    }
     .image {
       max-width: 100px;
       margin: auto;
@@ -54,10 +66,13 @@ const WaysToBetIDStyle = styled.div`
     color: #ffffff;
     letter-spacing: 4.5px;
     background: rgb(248, 47, 119);
-    margin-right: 20px;
+
     text-decoration: none;
     margin-top: 20px;
     display: inline-block;
+    @media screen and (min-width: 1260px) {
+      margin-right: 20px;
+    }
   }
   .info {
     a {
@@ -111,10 +126,29 @@ const WaysToBetID = () => {
           </div>
           <div className="way">
             <div className="image">
-              <img src="../WaysToBet/cricket.png" alt="Cricket" />
+              <img src="../WaysToBet/soccer.png" alt="Cricket" />
             </div>
             <div className="content">
-              <span>Cricket</span>
+              <span>FootBall</span>
+            </div>
+          </div>
+          <div className="way">
+            <div className="image">
+              <img
+                src="../WaysToBet/table-tennis-equipment.png"
+                alt="Cricket"
+              />
+            </div>
+            <div className="content">
+              <span>Tennis</span>
+            </div>
+          </div>
+          <div className="way">
+            <div className="image">
+              <img src="../WaysToBet/poker-chips.png" alt="Cricket" />
+            </div>
+            <div className="content">
+              <span>Casino</span>
             </div>
           </div>
           <div className="way">
@@ -122,23 +156,7 @@ const WaysToBetID = () => {
               <img src="../WaysToBet/cricket.png" alt="Cricket" />
             </div>
             <div className="content">
-              <span>Cricket</span>
-            </div>
-          </div>
-          <div className="way">
-            <div className="image">
-              <img src="../WaysToBet/cricket.png" alt="Cricket" />
-            </div>
-            <div className="content">
-              <span>Cricket</span>
-            </div>
-          </div>
-          <div className="way">
-            <div className="image">
-              <img src="../WaysToBet/cricket.png" alt="Cricket" />
-            </div>
-            <div className="content">
-              <span>Cricket</span>
+              <span>Teen Patti</span>
             </div>
           </div>
         </div>

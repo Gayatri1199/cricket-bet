@@ -6,10 +6,19 @@ const HeroBannerStyle = styled.div`
     max-width: 1440px;
     margin: auto;
     margin-top: 100px;
-    display: flex;
+
     justify-content: space-between;
+    padding: 0px 32px;
+
+    @media screen and (min-width: 1260px) {
+      display: flex;
+    }
 
     .content {
+      text-align: center;
+      @media screen and (min-width: 1260px) {
+        text-align: left;
+      }
       span {
         text-transform: uppercase;
         font-size: 13px;
@@ -39,7 +48,10 @@ const HeroBannerStyle = styled.div`
     .images {
       max-width: 800px;
       animation: MoveUpDown 5s linear infinite;
-      //   transition: 1.5s all ease-in-out;
+      display: none;
+      @media screen and (min-width: 1260px) {
+        display: block;
+      }
       img {
         width: 100%;
         height: 100%;

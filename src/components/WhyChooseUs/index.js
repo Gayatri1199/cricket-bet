@@ -8,19 +8,28 @@ const WhyChooseUsStyle = styled.div`
     rgba(0, 0, 0, 0.5) 36%,
     rgb(73 14 42) 100%
   );
-  padding: 100px 50px;
+  padding: 32px;
+  @media screen and (min-width: 768px) {
+    padding: 100px 50px;
+  }
 
   .why-choose-us-wrapper {
     max-width: 1280px;
     margin: auto;
     display: flex;
     gap: 100px;
+    flex-direction: column-reverse;
+    text-align: center;
 
     .image {
-      max-width: 420px;
       display: flex;
       overflow: scroll hidden;
       gap: 20px;
+      scrollbar-width: none;
+      a {
+        display: block;
+        min-width: 230px;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -47,7 +56,13 @@ const WhyChooseUsStyle = styled.div`
         padding-top: 20px;
         li {
           font-size: 20px;
+
+          max-width: 210px;
+          margin: auto;
           margin-bottom: 20px;
+          @media screen and (min-width: 768px) {
+            max-width: 300px;
+          }
         }
       }
 
@@ -70,14 +85,84 @@ const WhyChooseUs = () => {
     <WhyChooseUsStyle>
       <div className="why-choose-us-wrapper">
         <div className="image">
-          <img
-            src="https://mahakalofficialbook.com/uploads/images/c619d0babdf62daf62908631f7fd3266.jpg"
-            alt=""
-          />
-          <img
-            src="https://mahakalofficialbook.com/uploads/images/c619d0babdf62daf62908631f7fd3266.jpg"
-            alt=""
-          />
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/f276b2d8899bbb0f9b6a5ba58ece06d2.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/61f975b664342e421368b5f7f1a745eb.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/c619d0babdf62daf62908631f7fd3266.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/ee365a8a37db2c1c111ed21bc967717b.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/f276b2d8899bbb0f9b6a5ba58ece06d2.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/61f975b664342e421368b5f7f1a745eb.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/c619d0babdf62daf62908631f7fd3266.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/61f975b664342e421368b5f7f1a745eb.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/c619d0babdf62daf62908631f7fd3266.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/ee365a8a37db2c1c111ed21bc967717b.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/f276b2d8899bbb0f9b6a5ba58ece06d2.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/61f975b664342e421368b5f7f1a745eb.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
+          <a target="_blank" href="https://wa.me/917690030405">
+            <img
+              src="https://mahakalofficialbook.com/uploads/images/c619d0babdf62daf62908631f7fd3266.jpg"
+              alt="MAHAKAL book official website"
+            />
+          </a>
         </div>
         <div className="content">
           <span>Why choose us</span>
